@@ -90,22 +90,28 @@
 //     }
 
 //     add(num){
-//        return this.number += num;
+//        this.number += num;
+//        return this;
 //     }
 
 //     substract(num) {
-//         return this.number -= num;
+//        this.number -= num;
+//        return this;
 //     }
 
 //     divide(num) {
-//        return this.number /= num;
+//         this.number /= num;
+//        return this;
+
 //     }
 
 //     multiply(num) {
-//        return this.number *= num;
+//         this.number *= num;
+//        return this;
+
 //     }
 // }
 
 // const num1 = new CustomMath(5);
-// let x = num1.add(50);
+// let x = num1.add(50).substract(15).divide(2).multiply(10);
 // console.log(x);
